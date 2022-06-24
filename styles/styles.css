@@ -1,0 +1,178 @@
+.information {
+background-color:rgb(175, 126, 61);
+max-height: 18rem;
+width:608px;
+margin:0 auto;
+position:relative;
+
+}
+
+#p1inputname, #p2inputname {
+  width: 210px;
+
+}
+
+.control {
+    background-color:rgb(175, 126, 61);
+    height:10rem;
+    width:608px;
+    margin:0 auto;
+}
+.dywHelpBtn{
+
+    position:absolute;
+    top:10%;
+    right:5%;
+}
+
+.screen{
+    background-color: transparent;
+    height: 30rem;
+    width:608px;
+    margin:0 auto;
+}
+#splash-screen{
+    background-color: rgb(100, 71, 8);
+    height: 38rem;
+    width:608px;
+    margin:0 auto;
+}
+/* #game-screen{
+    background-color: rgb(21, 190, 35);
+    height: 30rem;
+    width:30rem;
+    margin:0 auto;
+} */
+#over-screen{
+    background-color: rgb(98, 65, 150);
+    height: 608px;
+    width:608px;
+    margin:0 auto;
+}
+
+.screen p{
+    margin:0;
+    padding: 0.5rem 0rem 0rem 2rem;
+}
+
+.information #gamestatus{
+    padding-top: 1rem;
+    padding-left:2rem;
+}
+
+.player1, .player2, .console, .infoarea{
+    margin: 0 0 0 0;
+    padding-top:0.8rem;
+    padding-left:2rem;
+}
+
+
+#inputform{
+    margin: 0 0 0 0;
+}
+
+#p1div, #p2div{
+    padding-left: 0.3rem;
+    padding-top:0.3rem;
+}
+
+/* #startpause, #toggleplayer, #updateplayer{
+    margin-left: 0.3rem;
+    margin-bottom:1rem;
+} */
+/* .submitbutton {
+    padding: 0;
+    margin: 0;
+} */
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+  }
+  
+  #myBar {
+    width: 100%;
+    height: 30px;
+    background-color: green;
+  }
+
+  #timeSelect{
+      padding-left: 0.3rem;
+      padding-top: 0.3rem;
+  }
+
+  #over-screen{
+    position: relative;
+  }
+  #over-screen #goText{
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    font-size: 2rem;
+    color:white;
+  }
+
+
+  /*Game Board Style=====================================================================*/
+
+  #game-screen {
+    display: grid;
+ 
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 608px;
+    margin: 0 auto;
+    width: 608px;
+  }
+  
+  #game-screen .cell {
+    align-items: center;
+    background: #4370F1;
+    display: flex;
+    height: 86.9px;
+    justify-content: center;
+    width: 86.9px;
+  }
+  
+  #game-screen .cell::after {
+     background: white;
+     border-radius: 50%;
+     border: 2px solid black;
+     content: '';
+     cursor: pointer;
+     height: 65px;
+     width: 65px;
+   }
+  
+  #game-screen .cell:not(.row-top).red::after {
+    background: red;
+  }
+  #game-screen .cell:not(.row-top).yellow::after {
+    background: yellow;
+  }
+  
+  #game-screen .cell:not(.row-top).red.win {
+    background: red;
+  }
+  
+  #game-screen .cell:not(.row-top).yellow.win {
+    background: yellow;
+  }
+  
+  #game-screen .cell.row-top {
+    background: #2eb14a;
+  }
+  
+  #game-screen .cell.row-top::after {
+    border: none;
+  }
+  
+  #game-screen .cell.row-top.red::after {
+    background: red;
+    border: 2px solid black;
+  }
+  
+  #game-screen .cell.row-top.yellow::after {
+    background: yellow;
+    border: 2px solid black;
+  }
